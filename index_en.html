@@ -17,6 +17,17 @@
             }
         }
     </script>
+    <style>
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body class="text-slate-800 bg-white font-sans antialiased">
 
@@ -30,29 +41,31 @@
         </div>
     </nav>
 
-    <section class="max-w-7xl mx-auto px-6 py-16 md:py-20 grid md:grid-cols-2 gap-12 items-center">
-        <div>
-            <h1 class="text-4xl md:text-5xl font-semibold tracking-tight leading-tight mb-6 text-slate-800">
-                Plannings?<br>As simple as<br>
-                <span class="relative inline-flex items-center justify-center bg-gray-200 text-slate-900 px-5 py-1.5 rounded-t-[18px] rounded-bl-[18px] rounded-br-[4px] mt-2 font-normal shadow-sm">
-                     Hello !
-                    <svg class="absolute -right-2.5 bottom-0 w-3 h-4 text-gray-200" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0V13H8C3 13 0 5 0 0Z" fill="currentColor"/></svg>
+    <section class="max-w-7xl mx-auto px-6 py-24 md:py-36 grid md:grid-cols-2 gap-16 md:gap-24 items-center">
+        <div class="max-w-2xl reveal">
+            <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-50/80 border border-slate-100 text-primary text-xs font-medium tracking-wide mb-8 shadow-sm">
+                <span>Nursing Homes</span> <span class="text-slate-300">•</span> <span>Hospitals - Clinics</span> <span class="text-slate-300">•</span> <span>Health Centers</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-semibold tracking-tight leading-snug mb-8 text-slate-800">
+                Plannings? As simple as<br>
+                <span class="relative inline-flex items-center justify-center bg-gray-200 text-slate-900 px-7 py-2.5 md:px-9 md:py-3.5 rounded-t-[28px] rounded-bl-[28px] rounded-br-[8px] mt-4 font-bold shadow-lg shadow-slate-300/50 text-5xl md:text-6xl tracking-tight transform transition-transform hover:scale-[1.02]">
+                    Hello !
+                    <svg class="absolute -right-3 bottom-0 w-4 h-5 text-gray-200" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0V13H8C3 13 0 5 0 0Z" fill="currentColor"/></svg>
                 </span>
             </h1>
-            <h3 class="text-lg font-medium text-slate-600 mb-4">Less urgency. Less temp staff. Better organized teams.</h3>
-            <p class="text-slate-500 mb-8 leading-relaxed text-sm md:text-base">Your managers shouldn't spend half their time on scheduling.<br>Empower them to handle unforeseen events quickly and peacefully.</p>
+            <p class="text-xl text-slate-500 mb-10 leading-relaxed font-medium">Less urgency. Less temp staff. Better organized teams.</p>
             <a href="https://calendly.com/baptiste-medopti/30min" target="_blank" rel="noopener noreferrer" class="inline-block bg-primary text-white px-6 py-3 rounded-full font-medium text-base hover:bg-blue-600 hover:-translate-y-0.5 transition-all duration-300 shadow-sm">Discover how to simplify your schedules &rarr;</a>
             <p class="text-xs text-slate-400 mt-4">Integration with your payroll software · Deployment in 15 days</p>
         </div>
-        <div class="bg-slate-50 rounded-[2rem] h-[400px] w-full flex items-center justify-center text-slate-400 border border-slate-100 shadow-sm overflow-hidden">
+        <div class="bg-slate-50 rounded-[2rem] h-[400px] w-full flex items-center justify-center text-slate-400 border border-slate-100 shadow-sm overflow-hidden reveal">
             <img src="images/corridor-hopital.png" alt="Hospital Corridor" class="w-full h-full object-cover">
         </div>
     </section>
 
     <section class="bg-slate-50/50">
-        <div class="max-w-5xl mx-auto px-6 py-20 text-center">
+        <div class="max-w-5xl mx-auto px-6 py-32 md:py-40 text-center reveal">
             <p class="text-primary font-semibold text-xs tracking-wider uppercase mb-3">The Situation</p>
-            <h2 class="text-3xl md:text-4xl font-semibold mb-5 text-slate-800 tracking-tight">In a context where recruiting and<br>retaining caregivers becomes critical.</h2>
+            <h2 class="text-3xl md:text-4xl font-semibold mb-5 text-slate-800 tracking-tight">In a context where recruiting and retaining caregivers becomes critical.</h2>
             <p class="text-slate-500 text-lg mb-16 max-w-3xl mx-auto leading-relaxed">Scheduling has become a task that takes precedence over supporting the teams.</p>
             
             <div class="grid md:grid-cols-3 gap-10 md:gap-8">
@@ -75,8 +88,8 @@
         </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-16 items-center">
-        <div class="bg-white rounded-xl border border-slate-200 shadow-xl shadow-slate-200/50 overflow-hidden flex flex-col h-[360px] md:h-[400px] w-full">
+    <section class="max-w-7xl mx-auto px-6 py-32 md:py-40 grid md:grid-cols-2 gap-16 items-center">
+        <div class="bg-white rounded-xl border border-slate-200 shadow-xl shadow-slate-200/50 overflow-hidden flex flex-col h-[360px] md:h-[400px] w-full reveal">
             <div class="h-10 bg-white border-b border-slate-100 flex items-center px-4 gap-2">
                 <div class="w-2.5 h-2.5 rounded-full bg-slate-200"></div>
                 <div class="w-2.5 h-2.5 rounded-full bg-slate-200"></div>
@@ -86,8 +99,8 @@
                 <img src="images/planning.png" alt="Planning Interface" class="w-full h-full object-cover object-left-top">
             </div>
         </div>
-        <div>
-            <h2 class="text-3xl font-semibold tracking-tight text-slate-800 mb-10">Scheduling becomes<br><em class="text-primary font-serif font-light">a simple and mastered task</em></h2>
+        <div class="reveal">
+            <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-800 mb-10">Scheduling becomes <em class="text-primary font-serif font-light">a simple and mastered task</em></h2>
             
             <div class="mb-8">
                 <h4 class="font-medium text-base text-slate-800 mb-2 flex items-center gap-2">
@@ -106,12 +119,12 @@
     </section>
 
     <section class="bg-slate-50/50">
-        <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-16 items-center">
-            <div class="order-2 md:order-1 relative w-full max-w-[260px] mx-auto bg-white rounded-[2.5rem] border-[8px] border-slate-900 shadow-2xl shadow-slate-200/50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 py-32 md:py-40 grid md:grid-cols-2 gap-16 items-center">
+            <div class="order-2 md:order-1 relative w-full max-w-[260px] mx-auto bg-white rounded-[2.5rem] border-[8px] border-slate-900 shadow-2xl shadow-slate-200/50 overflow-hidden reveal">
                 <img src="images/whatsapp-chat.png" alt="WhatsApp Application" class="w-full h-auto block">
             </div>
-            <div class="order-1 md:order-2">
-                <h2 class="text-3xl font-semibold tracking-tight text-slate-800 mb-6">We don't replace your managers.<br><em class="text-primary font-serif font-light">We give them their time back.</em></h2>
+            <div class="order-1 md:order-2 reveal">
+                <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-800 mb-6">We don't replace your managers. <em class="text-primary font-serif font-light">We give them their time back.</em></h2>
                 <p class="text-slate-600 mb-12 text-base leading-relaxed">Kaili is not just another tool. It's the end of scheduling mental load. Your managers return to their true job: the field and the people.</p>
                 
                 <div class="flex gap-10 border-t border-slate-200/60 pt-8">
@@ -132,10 +145,10 @@
         </div>
     </section>
 
-    <section class="max-w-6xl mx-auto px-6 py-20">
-        <h2 class="text-3xl font-semibold tracking-tight text-slate-800 text-center mb-12">Less chaos, <em class="text-primary font-serif font-light">more care.</em></h2>
+    <section class="max-w-6xl mx-auto px-6 py-32 md:py-40">
+        <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-800 text-center mb-16 reveal">Less chaos, <em class="text-primary font-serif font-light">more care.</em></h2>
         
-        <div class="grid md:grid-cols-2 rounded-2xl overflow-hidden border border-slate-200/60 shadow-sm">
+        <div class="grid md:grid-cols-2 rounded-2xl overflow-hidden border border-slate-200/60 shadow-sm reveal">
             <div class="bg-red-50/40 p-8">
                 <div class="text-red-400 text-sm font-bold uppercase tracking-widest text-center mb-8">Before</div>
                 <ul class="space-y-4 text-slate-600 text-sm leading-relaxed">
@@ -160,7 +173,7 @@
     </section>
 
     <section class="bg-slate-50/50">
-        <div class="max-w-4xl mx-auto px-6 py-20 text-center">
+        <div class="max-w-4xl mx-auto px-6 py-32 md:py-40 text-center reveal">
             <p class="text-xl md:text-2xl font-serif italic font-light text-slate-600 leading-relaxed mb-10">
                 "Scheduling is at the heart of decisions. Optimizing it means optimizing the FTE count, attractiveness, retention, and patient care..."
             </p>
@@ -174,11 +187,11 @@
         </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-6 py-24 text-center">
-        <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-800 mb-4">Quick chat. Immediate results.</h2>
+    <section class="max-w-7xl mx-auto px-6 py-32 md:py-48 text-center reveal">
+        <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-800 mb-6">Quick chat. Immediate results.</h2>
         <p class="text-slate-500 mb-8 text-sm md:text-base">We show you your schedule with your actual constraints.<br>You judge for yourself.</p>
         <a href="https://calendly.com/baptiste-medopti/30min" target="_blank" rel="noopener noreferrer" class="inline-block bg-primary text-white px-6 py-3 rounded-full font-medium hover:bg-blue-600 hover:-translate-y-0.5 transition-all duration-300 shadow-sm mb-4">Book a demo &rarr;</a>
-        <p class="text-xs text-slate-400 mb-20">Free · 30 min · By email</p>
+        <p class="text-xs text-slate-400 mb-24">Free · 30 min · By email</p>
 
         <div class="flex flex-col md:flex-row justify-between items-center text-sm text-slate-500 border-t border-slate-100 pt-8">
             <div class="text-xl font-semibold text-slate-800 mb-4 md:mb-0">Kaili</div>
@@ -191,5 +204,18 @@
         </div>
     </section>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        });
+    </script>
 </body>
 </html>
